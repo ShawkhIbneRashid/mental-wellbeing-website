@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+
+<html lang="">
+<!-- To declare your language - read more here: https://www.w3.org/International/questions/qa-html-language-declarations -->
+<head>
+<title>Health</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+<script>
+      const f = document.getElementById('form');
+      const q = document.getElementById('query');
+      const google = 'https://www.google.com/search?q=site%3A+';
+      
+
+      function submitted(event) {
+        event.preventDefault();
+        const url = google + site + '+' + q.value;
+        const win = window.open(url, '_blank');
+        win.focus();
+      }
+
+      f.addEventListener('submit', submitted);
+    </script>
+<style>
+
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid #00B4CC;
+  border-right: none;
+  padding: 15px;
+  height: 20px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9DBFAF;
+}
+
+.searchTerm:focus{
+  color: #00B4CC;
+}
+
+.searchButton {
+  width: 40px;
+  height: 36px;
+  border: 1px solid #00B4CC;
+  background: #00B4CC;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap{
+  width: 30%;
+  position: absolute;
+  top: 30%;
+  left: 85%;
+  transform: translate(-50%, -50%);
+}
+</style>
+</head>
+<body id="top">
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row1">
+ <header id="header" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <div id="logo" class="one_half first">
+      <h1 class="logoname"><a href = "index.html"><span>Mental Health</span></a></h1> 
+	  <h1 class="logoname">Let's talk about it</h1> 
+    </div>
+    <div class="one_quarter">
+      <div class="wrap">
+	  <form role="search" id="form">
+		<div class="search">
+			<input type="search" id = "query" name = "q" class="searchTerm" placeholder="What are you looking for?">
+		<button type="submit" class="searchButton">
+        <i class="fa fa-search"></i>
+		</button>
+		</div>
+		</form>	
+	  </div>
+    </div>
+	
+    <!-- ################################################################################################ -->
+  </header>
+ <nav id="mainav" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <ul class="clear">
+      <li><a href="./index.html">Home</a></li>
+      <li class="active"><a class="drop" href="#">Mental Health Basics</a>
+        <ul>
+		  <li><a href="./pages/what-is-mental-health.html">What is Mental Health</a></li>
+          <li><a href="./pages/mental-health-for-indigenous-people.html">Mental Health of Indigenous People</a></li>
+          
+        </ul>
+      </li>
+      <li><a class="drop" href="#">What to Look for</a>
+        <ul>
+          
+          <li><a href="./pages/anxiety-disorders.html">Anxiety Disorder</a></li>
+          <li><a href="./pages/anxiety-disorders.html">Depression</a></li>
+          <li><a class="drop" href="#">PTSD</a>
+         <ul>
+
+          <li><a href="./pages/ptsd.html">What is PTSD</a></li>
+          <li><a href="./pages/ptsd.html">Intergenerational Trauma</a></li>
+          <li> <a class = "drop" href="#">Screening Self-Test</a>
+		  <ul>
+			<li><a href="https://depression.org.nz/is-it-depression-anxiety/self-test/">Depression and Anxiety Self-Test</a></li>
+			<li><a href="https://screening.mhanational.org/screening-tools/ptsd/">PTSD Self-Test</a></li>
+		  </ul>
+		  </li>
+
+         </ul>
+
+        </ul>
+
+      </li>
+	  
+      <li><a class = "drop" href="#">Login/Register</a>
+	  <ul>
+		<li><a href="./pages/login.html">login</a></li>
+		<li><a href="./pages/registration.html">registration</a></li>
+	  </ul>
+	  <li class="active"><a class="drop" href="#">Change Language</a>
+        <ul>
+		  <li><a href="#">Cree</a></li>
+          <li><a href="#">Anishinaabe</a></li>
+		  <li><a href="#">Haudenosaunee</a></li>
+		  <li><a href="#">Inuk</a></li>
+          <li><a href="#">Métis</a></li>
+        </ul>
+      </li>
+      <li>
+	  <a href="./index.html#target">About us</a>
+	  </li>
+	   
+    </ul>
+    <!-- ################################################################################################ -->
+  </nav>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper bgded overlay" style="background-image:url('images/demo/backgrounds/front.png');">
+  <div id="pageintro" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <article>
+	<!--<h1 class="logoname"><span>Indigenous People in Canada</span></h1> -->
+	  <!--<h1 class="logoname">	</h1>  -->
+      <h3 class="heading">Indigenous People of Canada</h3>
+      <h2 class="heading1">Inuit, Métis & First Nations</h2>
+      <!--<footer><a class="btn" href="#"></a></footer> -->
+    </article>
+    <!-- ################################################################################################ -->
+  </div>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row3">
+  <main class="hoc container clear"> 
+    <!-- main body -->
+    <!-- ################################################################################################ -->
+    <div class="sectiontitle">
+      <h6 class="heading" style = "font-size:30px; margin-bottom:10px"><a id="target">Our Aim</a></h6>
+      <p style = "font-size:20px; text-align: justify; text-justify: inter-word;">
+	  Indigenous people of Canada suffer from mental health issues more than their non-Indigenous counterparts. Among Indigenous people who did experience a mental health problem were much more likely than the rest of Canadians to seek professional help. In some groups, the number of Indigenous people seeking help was as high as 17%—compared to the Canadian average of 8%.<sup><a href="./index.html#target2">1</a></sup> These numbers would probably have been even higher if more mental health professionals were available in isolated areas. This website is dedicated to mental health issues in Indigenous people. We're here to help you find quality information, provide you with the cultural ceremonies taking place near you and explore strategies to help you take care of your mental health. We have a group of dedicated people trained on mental health issues who can listen to your problems and provide some feedback. This website is for Indigenous people. Our goal is to assist them, not to enforce anything on them.</p>
+    </div>
+    <ul class="nospace group overview">
+      <li class="one_third">
+        <figure><a href="./pages/stories.html"><img src="images/demo/four-edit.png" alt=""></a>
+          <figcaption>
+            <h6 class="heading" style = "font-size:25px;">Stories</h6>
+            <p>Tell us your stories. Tell us about how you have overcome your struggles. Your stories will motivate others to take action.</p>
+          </figcaption>
+        </figure>
+      </li>
+      </li>
+      <li class="one_third">
+        <figure><a href="./pages/locate.html"><img src="images/demo/six-edit.png" alt=""></a>
+          <figcaption>
+            <h6 class="heading" style = "font-size:25px;">Ceremonies Near You</h6>
+            <p>Learn more about traditional physical, cultural and spritual ceremonies near you.</p>
+          </figcaption>
+        </figure>
+      </li>
+      <li class="one_third">
+        <figure><a href="./pages/chat.html"><img src="images/demo/one-edit.png" alt=""></a>
+          <figcaption>
+            <h6 class="heading" style = "font-size:25px;">Connect With Us</h6>
+            <p>Need to talk with someone? We are here to listen. Our dedicated voluenteers are here for you.</p>
+          </figcaption>
+        </figure>
+      </li>
+      <li class="one_third">
+        <figure><a href="./pages/know-more.html"><img src="images/demo/five-edit.png" alt=""></a>
+          <figcaption>
+            <h6 class="heading" style = "font-size:25px;">Learn More about Indigenous People in Canada</h6>
+            <p>Learn more about Indigenous people, their culture, their lifestyle and how to address them.</p>
+          </figcaption>
+        </figure>
+      </li>
+      <li class="one_third">
+        <figure><a href="./pages/age-groups.html"><img src="images/demo/seven-edit.png" alt=""></a>
+          <figcaption>
+            <h6 class="heading" style = "font-size:25px;">Indigenous Mental Health in Different Age Groups</h6>
+            <p>People of different ages suffer from separate mental health issues. Learn more about mental health problems in different age groups.</p>
+          </figcaption>
+        </figure>
+      </li>
+      <li class="one_third">
+        <figure><a href="./pages/join.html"><img src="images/demo/eight-edit.png" alt=""></a>
+          <figcaption>
+            <h6 class="heading" style = "font-size:25px;">Want to Help?</h6>
+            <p>Surveys show that Indigenous people suffer from mental health issues more than their non-Indigenous counterparts. Join us as a volunteer and participate in something better.</p>
+          </figcaption>
+        </figure>
+      </li>
+    </ul>
+    <!-- ################################################################################################ -->
+    <!-- / main body -->
+    <div class="clear"></div>
+  </main>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row4" style = "background-color:#ccffff;">
+  <footer id="footer" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <div class="one_third first">
+      <h1 class="logoname"><a id="target2">Our Misssion</a></h1>
+      <p class="btmspace-30" style = "text-align: justify;text-justify: inter-word;">We are here to help you find quality information, help you to learn new skills, inform you about the nearby spiritual ceremonies and most importanly listen. <br>The statistics in this article have been taken from: Government of Canada. (2006). Aboriginal mental health and well-being. In The human face of mental health and mental illness in Canada (Chapter 12). Ottawa: Minister of Public Works and Government Services Canada. <a href = "https://www.canada.ca/en/public-health/topics/mental-health-wellness.html">Link</a></p>
+      <ul class="faico clear">
+        <li><a class="faicon-facebook" href="#"><i class="fab fa-facebook"></i></a></li>
+        <li><a class="faicon-google-plus" href="#"><i class="fab fa-google-plus-g"></i></a></li>
+        <li><a class="faicon-linkedin" href="#"><i class="fab fa-linkedin"></i></a></li>
+        <li><a class="faicon-twitter" href="#"><i class="fab fa-twitter"></i></a></li>
+      </ul>
+    </div>
+    <div class="one_third">
+      <h6 class="heading">Links to Important Sites</h6>
+      <ul class="nospace linklist">
+        <li><a href="https://www.mentalhealth.gov/">mentalhealth.gov</a></li>
+        <li><a href="https://www.sanyas.ca/">sanyas.ca</a></li>
+        <li><a href="https://www.heretohelp.bc.ca/">hertohelp.ca</a></li>
+        <li><a href="https://www.camh.ca/">Mental Illness and Addiction Facts</a></li>
+      </ul>
+    </div>
+    <div class="one_third">
+      <h6 class="heading">Any comments or concerns?</h6>
+      <form method="post" action="#">
+        <fieldset>
+          <legend>Newsletter:</legend>
+          <input class="btmspace-15" type="text" value="" placeholder="Name">
+          <input class="btmspace-15" type="text" value="" placeholder="Email">
+		  <input class="btmspace-15" type="text" value="" placeholder="Comment">
+          <button type="submit" value="submit">Submit</button>
+        </fieldset>
+      </form>
+    </div>
+    <!-- ################################################################################################ -->
+  </footer>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row5" style = "background-color:#00e6e6">
+  <div id="copyright" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <p class="fl_left">Copyright &copy; 2021 - All Rights Reserved </p>
+    
+    <!-- ################################################################################################ -->
+  </div>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<a id="backtotop" href="#top"><i class="fas fa-chevron-up"></i></a>
+<!-- JAVASCRIPTS -->
+<script src="layout/scripts/jquery.min.js"></script>
+<script src="layout/scripts/jquery.backtotop.js"></script>
+<script src="layout/scripts/jquery.mobilemenu.js"></script>
+</body>
+</html>

@@ -1,0 +1,202 @@
+ <html>
+  <head>
+    <title>Add Map</title>
+	<title>Surogou | Pages | Gallery</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="../layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style type="text/css">
+ 
+ body {
+  background: #222;
+}	
+
+* {
+  outline: 0;
+}
+
+.time {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.time span {
+  background-color: #000000;
+  display: inline-block;
+  border-radius: 3px;
+  text-align: center;
+  padding: 2px 20px;
+  color: #fff;
+  opacity: 0.3;
+}
+.message {
+  margin-bottom: 10px;
+}
+.message .messageText {
+  text-align: left;
+  color: #FFFFFF;
+}
+.message.sol {
+  text-align: left;
+}
+.message.sag {
+  text-align: right;
+}
+.message .resim {
+  background: #FF0044 none no-repeat center;
+  vertical-align: text-top;
+  background-size: cover;
+  display: inline-block;
+  position: relative;
+  color: #FFFFFF;
+  height: 40px;
+  width: 40px;
+}
+.message .messageText {
+  background-color: #FF0044;
+  vertical-align: text-top;
+  display: inline-block;
+  position: relative;
+  line-height: 20px;
+  max-width: 165px;
+  color: #FFFFFF;
+  padding: 10px;
+}
+.message.left .userPortrait,
+.message.sag .messageText {
+  border-radius: 5px 0 0 5px;
+}
+.message.sag .userPortrait,
+.message.sol .messageText {
+  border-radius: 0 5px 5px 0;
+}
+.message.mtLine.sol .messageText {
+  border-radius: 0 5px 5px 0;
+}
+.message.mtLine.sag .messageText {
+  border-radius: 5px 0 0 5px;
+}
+.message .messageText:before {
+  border-color: transparent #FF0044;
+  border-style: solid;
+  position: absolute;
+  border-width: 0;
+  display: block;
+  content: "";
+  z-index: 1;
+}
+.message.sol .messageText:before {
+  border-width: 0 10px 10px 0;
+  left: -10px;
+  top: 0;
+}
+.message.sag .messageText:before {
+  border-width: 10px 0 0 10px;
+  right: -10px;
+  top: 30px;
+}
+.message .messageText:after {
+  content: attr(data-time);
+  color: rgba(255,255,255,0.5);
+  position: absolute;
+  line-height: 20px;
+  display: block;
+  bottom: 2px;
+  z-index: 1;
+}
+.message.sol .messageText:after {
+  margin-left: 5px;
+  left: 100%;
+}
+.message.sag .messageText:after {
+  margin-right: 5px;
+  right: 100%;
+}
+ </style>
+ </head>
+ <nav id="mainav" class="hoc clear" style="margin-bottom:10px"> 
+    <!-- ################################################################################################ -->
+    <ul class="clear">
+      <li><a href="../index.html">Home</a></li>
+      <li class="active"><a class="drop" href="#">Mental Health Basics</a>
+        <ul>
+		  <li><a href="./pages/what-is-mental-health.html">What is Mental Health</a></li>
+              <li><a href="./pages/mental-health-for-indigenous-people.html">Mental Health in Indigenous People</a></li>
+       
+        </ul>
+      </li>
+      <li><a class="drop" href="#">What to Look for</a>
+        <ul>
+          
+          <li><a href="./pages/anxiety-disorders.html">Anxiety Disorder</a></li>
+          <li><a href="./pages/anxiety-disorders.html">Depression</a></li>
+          <li><a class="drop" href="#">PTSD</a>
+         <ul>
+
+          <li><a href="./pages/ptsd.html">What is PTSD</a></li>
+          <li><a href="./pages/ptsd.html">Intergenerational Trauma</a></li>
+          <li> <a class = "drop" href="#">Screening Self-Test</a>
+		  <ul>
+			<li><a href="https://depression.org.nz/is-it-depression-anxiety/self-test/">Depression and Anxiety Self-Test</a></li>
+			<li><a href="https://screening.mhanational.org/screening-tools/ptsd/">PTSD Self-Test</a></li>
+		  </ul>
+		  </li>
+
+         </ul>
+
+        </ul>
+
+      </li>
+      <li><a class = "drop" href="#">Login/Register</a>
+	  <ul>
+		<li><a href="./pages/login.html">login</a></li>
+		<li><a href="./pages/registration.html">registration</a></li>
+	  </ul>
+	  <li class="active"><a class="drop" href="#">Change Language</a>
+        <ul>
+		  <li><a href="#">Cree</a></li>
+          <li><a href="#">Anishinaabe</a></li>
+		  <li><a href="#">Haudenosaunee</a></li>
+		  <li><a href="#">Inuk</a></li>
+          <li><a href="#">Métis</a></li>
+        </ul>
+      </li>
+      <li><a href="../index.html#target">About us</a></li>
+    </ul>
+    <!-- ################################################################################################ -->
+  </nav>
+ <div class="time"><span>10:42</span></div>
+    
+    <div class="message sol">
+      <div class="resim" style="background-image: url('https://fbcdn-sphotos-a-a.akamaihd.net/hphotos-ak-prn2/t1/1461137_576157439120105_582502926_n.jpg');"></div><div class="messageText" data-time="10:42">
+        Lorem ipsum
+      </div>
+    </div>
+    <div class="message sag mtLine">
+      <div class="messageText" data-time="10:43">
+        dolor sit
+      </div><div class="resim" style="background-image: url('https://fbcdn-sphotos-c-a.akamaihd.net/hphotos-ak-prn2/t1/1393075_669686723071617_1541630705_n.jpg');"></div>
+    </div>
+    <div class="message sol mtLine">
+      <div class="resim" style="background-image: url('https://fbcdn-sphotos-d-a.akamaihd.net/hphotos-ak-frc3/t1/q71/1422532_452755621503523_1504727417_n.jpg');"></div><div class="messageText" data-time="10:45">
+        amet
+      </div>
+    </div>
+    <div class="message sol">
+      <div class="resim" style="background-image: url('https://fbcdn-sphotos-g-a.akamaihd.net/hphotos-ak-prn2/1395115_368377233300847_323365594_n.jpg');"></div><div class="messageText" data-time="10:45">
+        consectetur adipiscing
+      </div>
+    </div>
+    <div class="message sol mtLine">
+      <div class="resim" style="background-image: url('https://fbcdn-sphotos-a-a.akamaihd.net/hphotos-ak-prn2/t1/1461137_576157439120105_582502926_n.jpg');"></div><div class="messageText" data-time="10:58">
+        elit sed.
+      </div>
+    </div>
+    <div class="message sol">
+      <div class="resim" style="background-image: url('https://fbcdn-sphotos-d-a.akamaihd.net/hphotos-ak-frc1/1601244_265297516958879_798390578_n.png');"></div><div class="messageText" data-time="11:01">
+        do eiusmod
+      </div>
+    </div>

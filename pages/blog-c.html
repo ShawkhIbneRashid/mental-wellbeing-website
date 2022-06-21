@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<!--
+Template Name: Surogou
+Author: <a href="https://www.os-templates.com/">OS Templates</a>
+Author URI: https://www.os-templates.com/
+Copyright: OS-Templates.com
+Licence: Free to use under our free template licence terms
+Licence URI: https://www.os-templates.com/template-terms
+-->
+<html lang="">
+<!-- To declare your language - read more here: https://www.w3.org/International/questions/qa-html-language-declarations -->
+<head>
+<title>Health</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="../layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+<style>
+
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid #00B4CC;
+  border-right: none;
+  padding: 15px;
+  height: 20px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9DBFAF;
+}
+
+.searchTerm:focus{
+  color: #00B4CC;
+}
+
+.searchButton {
+  width: 40px;
+  height: 36px;
+  border: 1px solid #00B4CC;
+  background: #00B4CC;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap{
+  width: 30%;
+  position: absolute;
+  top: 30%;
+  left: 85%;
+  transform: translate(-50%, -50%);
+}
+</style>
+</head>
+<body id="top">
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row1">
+  <header id="header" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <div id="logo" class="one_half first">
+      <h1 class="logoname"><a href = "index.html"><span>Mental Health</span></a></h1> 
+	  <h1 class="logoname">Let's talk about it</h1> 
+    </div>
+    <div class="one_quarter">
+      <div class="wrap">
+	  <form role="search" id="form">
+		<div class="search">
+			<input type="search" id = "query" name = "q" class="searchTerm" placeholder="What are you looking for?">
+		<button type="submit" class="searchButton">
+        <i class="fa fa-search"></i>
+		</button>
+		</div>
+		</form>	
+	  </div>
+    </div>
+	<script>
+      const f = document.getElementById('form');
+      const q = document.getElementById('query');
+      const google = 'https://www.google.com/search?q=site%3A+';
+      
+
+      function submitted(event) {
+        event.preventDefault();
+        const url = google + site + '+' + q.value;
+        const win = window.open(url, '_blank');
+        win.focus();
+      }
+
+      f.addEventListener('submit', submitted);
+    </script>
+    <!-- ################################################################################################ -->
+  </header>
+  <nav id="mainav" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <ul class="clear">
+      <li><a href="../index.html">Home</a></li>
+      <li class="active"><a class="drop" href="#">Mental Health Basics</a>
+        <ul>
+		  <li><a href="./what-is-mental-health.html">What is Mental Health</a></li>
+              <li><a href="./mental-health-for-indigenous-people.html">Mental Health in Indigenous People</a></li>
+          
+        </ul>
+      </li>
+      <li><a class="drop" href="#">What to Look for</a>
+        <ul>
+          
+          <li><a href="./anxiety-disorders.html">Anxiety Disorder</a></li>
+          <li><a href="./anxiety-disorders.html">Depression</a></li>
+          <li><a class="drop" href="#">PTSD</a>
+         <ul>
+
+          <li><a href="./ptsd.html">What is PTSD</a></li>
+          <li><a href="./ptsd.html">Intergenerational Trauma</a></li>
+          <li> <a class = "drop" href="#">Screening Self-Test</a>
+		  <ul>
+			<li><a href="https://depression.org.nz/is-it-depression-anxiety/self-test/">Depression and Anxiety Self-Test</a></li>
+			<li><a href="https://screening.mhanational.org/screening-tools/ptsd/">PTSD Self-Test</a></li>
+		  </ul>
+		  </li>
+
+         </ul>
+
+        </ul>
+
+      </li>
+      <li><a class = "drop" href="#">Login/Register</a>
+	  <ul>
+		<li><a href="./login.html">login</a></li>
+		<li><a href="./registration.html">registration</a></li>
+	  </ul>
+	  <li class="active"><a class="drop" href="#">Change Language</a>
+        <ul>
+		  <li><a href="#">Cree</a></li>
+          <li><a href="#">Anishinaabe</a></li>
+		  <li><a href="#">Haudenosaunee</a></li>
+		  <li><a href="#">Inuk</a></li>
+          <li><a href="#">Métis</a></li>
+        </ul>
+      </li>
+      <li><a href="../index.html#target">About us</a></li>
+    </ul>
+    <!-- ################################################################################################ -->
+  </nav>
+  <div>
+  <div id="breadcrumb" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <ul>
+      <li style="margin-left:10px"><a href="../index.html">Home</a></li>
+      <li><a href="./stories.html">Stories</a></li>
+      <li><a href="./blog-c.html">Blog C</a></li>
+    </ul>
+    <!-- ################################################################################################ -->
+  </div>
+</div>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row3">
+  <main class="hoc container clear"> 
+    <!-- main body -->
+    <!-- ################################################################################################ -->
+   
+    <!-- ################################################################################################ -->
+    <!-- ################################################################################################ -->
+    <div class="content two_quarter" style = "text-align: justify;text-justify: inter-word;"> 
+      <!-- ################################################################################################ -->
+
+      <h2 style = "font-size: 30px; color: #006600">Blog C</h2>
+
+		<p>
+		Fusce vestibulum lacus a arcu gravida, et interdum augue iaculis. Phasellus sed magna felis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam erat volutpat. Vivamus aliquet dolor a magna consequat, vitae hendrerit libero lobortis. Maecenas consequat sem eros, quis sodales dolor venenatis eget. Mauris interdum nunc et lectus posuere scelerisque. Praesent pretium metus sit amet leo scelerisque tempor. Proin posuere mi neque, sit amet interdum orci lobortis eget. Aliquam gravida interdum arcu dictum imperdiet. Donec convallis ultrices lectus, interdum tincidunt lacus aliquet vitae. Nunc ullamcorper faucibus nulla, nec ullamcorper diam convallis eget. Phasellus vitae cursus ante, vitae finibus libero. Aenean sem magna, facilisis in pellentesque ac, egestas sit amet ex. Aliquam vitae justo augue. Cras ac lobortis sapien, at tincidunt dui.
+		</p>
+     
+
+     
+
+	  <!-- ################################################################################################ -->
+    </div>
+	 <div class="content two_quarter"> 
+	 <img class="imgr borderedbox inspace-5" src="../images/demo/imgr3.png" alt="">
+	 </div>
+    <!-- ################################################################################################ -->
+    <!-- / main body -->
+    <div class="clear"></div>
+  </main>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!--<div class="wrapper gradient">
+  <section id="cta" class="hoc container clear"> -->
+    <!-- ################################################################################################ -->
+    <!--<div class="sectiontitle">
+      <h6 class="heading">interdum pulvinar aliquam</h6>
+      <p>in urna proin luctus ligula eget mauris quisque congue malesuada</p>
+    </div>
+    <ul class="nospace clear">
+      <li class="one_third first">
+        <div class="block clear"><i class="fas fa-phone"></i> <span><strong>Give us a call:</strong> +00 (123) 456 7890</span> </div>
+      </li>
+      <li class="one_third">
+        <div class="block clear"><i class="fas fa-envelope"></i> <span><strong>Send us a mail:</strong> support@domain.com</span> </div>
+      </li>
+      <li class="one_third">
+        <div class="block clear"><i class="fas fa-map-marker-alt"></i> <span><strong>Come visit us:</strong> Directions to <a href="#">our location</a></span> </div>
+      </li>
+    </ul>-->
+    <!-- ################################################################################################ -->
+  <!--</section>
+</div>-->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row4" style = "background-color:#ccffff;">
+  <footer id="footer" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <div class="one_third first">
+      <h1 class="logoname">Our Misssion</h1>
+      <p class="btmspace-30" style = "text-align: justify;text-justify: inter-word;">We are here to help you find quality information, help you to learn new skills, inform you about the nearby spiritual ceremonies and most importanly listen. </p>
+      <ul class="faico clear">
+        <li><a class="faicon-facebook" href="#"><i class="fab fa-facebook"></i></a></li>
+        <li><a class="faicon-google-plus" href="#"><i class="fab fa-google-plus-g"></i></a></li>
+        <li><a class="faicon-linkedin" href="#"><i class="fab fa-linkedin"></i></a></li>
+        <li><a class="faicon-twitter" href="#"><i class="fab fa-twitter"></i></a></li>
+      </ul>
+    </div>
+    <div class="one_third">
+      <h6 class="heading">Links to Important Sites</h6>
+      <ul class="nospace linklist">
+        <li><a href="https://www.mentalhealth.gov/">mentalhealth.gov</a></li>
+        <li><a href="https://www.sanyas.ca/">sanyas.ca</a></li>
+        <li><a href="https://www.heretohelp.bc.ca/">hertohelp.ca</a></li>
+        <li><a href="https://www.camh.ca/">Mental Illness and Addiction Facts</a></li>
+      </ul>
+    </div>
+    <div class="one_third">
+      <h6 class="heading">Any comments or concerns?</h6>
+      <form method="post" action="#">
+        <fieldset>
+          <legend>Newsletter:</legend>
+          <input class="btmspace-15" type="text" value="" placeholder="Name">
+          <input class="btmspace-15" type="text" value="" placeholder="Email">
+		  <input class="btmspace-15" type="text" value="" placeholder="Comment">
+          <button type="submit" value="submit">Submit</button>
+        </fieldset>
+      </form>
+    </div>
+    <!-- ################################################################################################ -->
+  </footer>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row5" style = "background-color:#00e6e6">
+  <div id="copyright" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <p class="fl_left">Copyright &copy; 2021 - All Rights Reserved </p>
+    
+    <!-- ################################################################################################ -->
+  </div>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<a id="backtotop" href="#top"><i class="fas fa-chevron-up"></i></a>
+<!-- JAVASCRIPTS -->
+<script src="../layout/scripts/jquery.min.js"></script>
+<script src="../layout/scripts/jquery.backtotop.js"></script>
+<script src="../layout/scripts/jquery.mobilemenu.js"></script>
+</body>
+</html>
